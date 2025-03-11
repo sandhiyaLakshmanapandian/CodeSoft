@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body style="color=pink">
+    </head>
+<body>
     <!-- Header Section -->
     <header>
         <h1>Welcome to My Portfolio</h1>
@@ -114,62 +113,174 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>© 2025 [Your Name]. All rights reserved.</p>
+        <p>© 2025 Sandhiya L. All rights reserved.</p>
     </footer>
 </body>
 <style>
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-section {
-    padding: 20px;
-    margin: 10px 0;
-}
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-}
-.projects {
-    display: flex;
-    gap: 20px;
-}
-.project {
-    background: #fff;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-</style>
-</html>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    
+    /* General Styles */
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #0D1117; /* Dark Modern Background */
+        color: #EAEAEA; /* Light Text for Contrast */
+    }
+    
+    /* Header */
+    header {
+        background: linear-gradient(135deg, #1F1F1F, #3A3A3A);
+        color: #00E5FF; /* Cyan Blue */
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 229, 255, 0.2);
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    header nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+    
+    header nav ul li a {
+        color: #00E5FF; /* Neon Cyan */
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease-in-out;
+    }
+    
+    header nav ul li a:hover {
+        color: #FFD700; /* Gold Hover Effect */
+        text-shadow: 0 0 8px #FFD700;
+    }
+    
+    /* Sections */
+    section {
+        padding: 40px;
+        margin: 30px auto;
+        max-width: 900px;
+        background: rgba(50, 50, 50, 0.8); /* Semi-Transparent Dark Box */
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+        backdrop-filter: blur(10px);
+    }
+    
+    /* Portfolio Projects */
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .project {
+        background: #1A1A1A; /* Darker Card */
+        padding: 20px;
+        border-left: 5px solid #64FFDA; /* Neon Green Border */
+        border-radius: 10px;
+        flex: 1;
+        transition: 0.4s ease-in-out;
+    }
+    
+    .project:hover {
+        transform: scale(1.05);
+        background: #00E676; /* Bright Green */
+        color: #fff;
+        box-shadow: 0 0 15px #00E676;
+    }
+    
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #0D47A1; /* Deep Blue */
+        color: #FFD700; /* Gold */
+        font-weight: bold;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    }
+    
+    /* Contact Form */
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: #1F1F1F; /* Dark Grey */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 12px rgba(0, 229, 255, 0.3);
+        color: white;
+    }
+    
+    form input, form textarea {
+        padding: 10px;
+        border: 1px solid #00E5FF;
+        background: #333;
+        color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    
+    form input:focus, form textarea:focus {
+        border-color: #FFD700;
+        box-shadow: 0 0 10px #FFD700;
+    }
+    
+    /* Tables */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #263238; /* Dark Cyan */
+    }
+    
+    table, th, td {
+        border: 1px solid #64FFDA; /* Neon Green */
+        padding: 12px;
+        text-align: left;
+    }
+    
+    th {
+        background: #00E676; /* Bright Green */
+        color: #000;
+        font-weight: bold;
+    }
+    
+    /* Buttons */
+    button {
+        background: #00E5FF;
+        color: #000;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease-in-out;
+    }
+    
+    button:hover {
+        background: #FFD700;
+        box-shadow: 0 0 12px #FFD700;
+    }
+    
+    /* Links */
+    a {
+        color: #64B5F6; /* Light Blue */
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease-in-out;
+    }
+    
+    a:hover {
+        color: #FF4081; /* Pink Hover Effect */
+        text-shadow: 0 0 10px #FF4081;
+    }
+    </style>
+    
